@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="iac85p" name="GraphicalAssets" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.GraphicalAssets" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" jucerVersion="5.1.2">
+  <MAINGROUP id="REoPyQ" name="GraphicalAssets">
+    <GROUP id="{0874DD5F-073B-0E9E-43E1-7EDFCBDD9942}" name="Source">
+      <GROUP id="{368158EC-795C-F683-C1E3-C848E3A70A6F}" name="BinaryResources">
+        <FILE id="XQGzTF" name="icon16.png" compile="0" resource="1" file="BinaryResources/icon16.png"/>
+        <FILE id="JQPrYe" name="icon32.png" compile="0" resource="1" file="BinaryResources/icon32.png"/>
+        <FILE id="eONuZC" name="icon128.png" compile="0" resource="1" file="BinaryResources/icon128.png"/>
+        <FILE id="mQZ7UJ" name="icon256.png" compile="0" resource="1" file="BinaryResources/icon256.png"/>
+        <FILE id="VIQxGi" name="icon512.png" compile="0" resource="1" file="BinaryResources/icon512.png"/>
+        <FILE id="f3nQA8" name="icons.ttf" compile="0" resource="1" file="BinaryResources/icons.ttf"/>
+        <FILE id="ObFaAD" name="juceLogo.svg" compile="0" resource="1" file="BinaryResources/juceLogo.svg"/>
+      </GROUP>
+      <GROUP id="{D7BFEA6F-E47F-B89F-C6ED-3D0802ADA926}" name="Application">
+        <FILE id="YeqKCH" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+        <FILE id="wMNfTE" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+        <FILE id="Reibqz" name="GraphicalAssetsApplication.cpp" compile="1"
+              resource="0" file="Source/GraphicalAssetsApplication.cpp"/>
+        <FILE id="LCQb6v" name="GraphicalAssetsApplication.h" compile="0" resource="0"
+              file="Source/GraphicalAssetsApplication.h"/>
+        <FILE id="ipQwIW" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      </GROUP>
+      <GROUP id="{533688DF-0F82-BCAB-4235-69E9888D605C}" name="Panels">
+        <FILE id="Xc3HKB" name="FontPanel.cpp" compile="1" resource="0" file="Source/FontPanel.cpp"/>
+        <FILE id="ECXzrE" name="FontPanel.h" compile="0" resource="0" file="Source/FontPanel.h"/>
+        <FILE id="AyrCQT" name="VectorPanel.cpp" compile="1" resource="0" file="Source/VectorPanel.cpp"/>
+        <FILE id="GQtqRM" name="VectorPanel.h" compile="0" resource="0" file="Source/VectorPanel.h"/>
+        <FILE id="N9IVdD" name="RasterPanel.cpp" compile="1" resource="0" file="Source/RasterPanel.cpp"/>
+        <FILE id="y9uMao" name="RasterPanel.h" compile="0" resource="0" file="Source/RasterPanel.h"/>
+        <FILE id="swf2By" name="PathDataPanel.cpp" compile="1" resource="0"
+              file="Source/PathDataPanel.cpp"/>
+        <FILE id="Fatdew" name="PathDataPanel.h" compile="0" resource="0" file="Source/PathDataPanel.h"/>
+        <FILE id="xmQ17E" name="DrawablesPanel.cpp" compile="1" resource="0"
+              file="Source/DrawablesPanel.cpp"/>
+        <FILE id="fFmh2M" name="DrawablesPanel.h" compile="0" resource="0"
+              file="Source/DrawablesPanel.h"/>
+      </GROUP>
+      <GROUP id="{97CFDAE4-7F5A-A7B2-4E12-A84428868F3A}" name="Utility UI">
+        <FILE id="RvcJ7w" name="TabbedPanel.cpp" compile="1" resource="0" file="Source/TabbedPanel.cpp"/>
+        <FILE id="tdWQrx" name="TabbedPanel.h" compile="0" resource="0" file="Source/TabbedPanel.h"/>
+        <FILE id="AxlY3a" name="MainContentComponent.cpp" compile="1" resource="0"
+              file="Source/MainContentComponent.cpp"/>
+        <FILE id="l9yyvz" name="MainContentComponent.h" compile="0" resource="0"
+              file="Source/MainContentComponent.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="GraphicalAssets"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="GraphicalAssets"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="GraphicalAssets"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="GraphicalAssets"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="GraphicalAssets"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="GraphicalAssets"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="GraphicalAssets"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="GraphicalAssets"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

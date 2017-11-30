@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="K6Y1Wb" name="MVCFilter" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.ADC.MVCFilter" includeBinaryInAppConfig="1"
+              cppLanguageStandard="14" buildVST="1" buildVST3="0" buildAU="1"
+              buildAUv3="0" buildRTAS="0" buildAAX="0" buildStandalone="1"
+              enableIAA="0" pluginName="MVCFilter" pluginDesc="MVCFilter" pluginManufacturer="ADC"
+              pluginManufacturerCode="ADCu" pluginCode="K6y1" pluginChannelConfigs=""
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="MVCFilterAU"
+              pluginRTASCategory="" aaxIdentifier="com.ADC.MVCFilter" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="5.2.0" companyName="ADC" companyCopyright="ADC">
+  <MAINGROUP id="Il9Tdv" name="MVCFilter">
+    <GROUP id="{7868591F-AD62-01C5-81CA-751E880FEB46}" name="Source">
+      <GROUP id="{05CF42FA-92D4-0AA4-6742-11E47BE6A651}" name="BinaryResources">
+        <FILE id="Pcb1dq" name="DialLarge.png" compile="0" resource="1" file="BinaryResources/DialLarge.png"/>
+        <FILE id="Ri5ECt" name="DialLargeSurround.png" compile="0" resource="1"
+              file="BinaryResources/DialLargeSurround.png"/>
+        <FILE id="dIjCCO" name="DialSmall.png" compile="0" resource="1" file="BinaryResources/DialSmall.png"/>
+        <FILE id="BwMsK2" name="DialSmallSurround.png" compile="0" resource="1"
+              file="BinaryResources/DialSmallSurround.png"/>
+        <FILE id="Qb1O3G" name="RadioButtonOff.png" compile="0" resource="1"
+              file="BinaryResources/RadioButtonOff.png"/>
+        <FILE id="KYwT5B" name="RadioButtonOn.png" compile="0" resource="1"
+              file="BinaryResources/RadioButtonOn.png"/>
+      </GROUP>
+      <GROUP id="{0B08A9FD-7A5D-6718-04BD-55010D45069E}" name="Controller">
+        <FILE id="ybYXHB" name="Controller.cpp" compile="1" resource="0" file="Source/Controller.cpp"/>
+        <FILE id="S4xQMj" name="Controller.h" compile="0" resource="0" file="Source/Controller.h"/>
+      </GROUP>
+      <GROUP id="{DD2E88F0-068D-1734-6929-1C04D1D6C938}" name="Model">
+        <FILE id="ut9x0b" name="DCFilter.h" compile="0" resource="0" file="Source/DCFilter.h"/>
+        <FILE id="EGWIdy" name="Distortion.h" compile="0" resource="0" file="Source/Distortion.h"/>
+        <FILE id="ejWUag" name="Filter.h" compile="0" resource="0" file="Source/Filter.h"/>
+      </GROUP>
+      <GROUP id="{51972643-22C6-40AE-BA84-F4F69E68E2AF}" name="View">
+        <FILE id="KRJz1W" name="FilmStripDial.h" compile="0" resource="0" file="Source/FilmStripDial.h"/>
+        <FILE id="qvlXbF" name="PluginView.cpp" compile="1" resource="0" file="Source/PluginView.cpp"/>
+        <FILE id="cK2NHX" name="PluginView.h" compile="0" resource="0" file="Source/PluginView.h"/>
+      </GROUP>
+      <GROUP id="{DAFEDF5F-05FE-B90B-6807-A4FED872CCE0}" name="Xtras">
+        <FILE id="Ldhkdf" name="MathHelpers.h" compile="0" resource="0" file="Source/MathHelpers.h"/>
+        <FILE id="ZjNjvd" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/PluginProcessor.cpp"/>
+        <FILE id="JuVTbz" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/PluginProcessor.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-Werror -Wall -Wshadow -Wno-missing-field-initializers -Wshorten-64-to-32 -Wstrict-aliasing -Wuninitialized -Wunused-parameter -Wconversion -Wsign-compare -Wint-conversion -Woverloaded-virtual -Wreorder -Wconstant-conversion -Wsign-conversion -Wno-unused-function -Wconversion">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="MVCFilter"
+                       enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="MVCFilter"
+                       enablePluginBinaryCopyStep="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="MVCFilter" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="MVCFilter" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0" linkTimeOptimisation="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="V1kxkC" name="ResponsiveLayout" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.ResponsiveLayout" includeBinaryInAppConfig="1"
+              cppLanguageStandard="14" jucerVersion="5.1.2">
+  <MAINGROUP id="DLH2h4" name="ResponsiveLayout">
+    <GROUP id="{7AD6281B-AC97-8714-4C02-B5F25BACA873}" name="Source">
+      <GROUP id="{D2CBEEEA-9A02-5048-FD97-58C391825AAA}" name="BinaryResources">
+        <FILE id="UZC1ds" name="trappist-art.png" compile="0" resource="1"
+              file="../trappist-art.png"/>
+      </GROUP>
+      <GROUP id="{66F866A7-EEA5-2C12-1271-281AF759E359}" name="Assets">
+        <FILE id="VQEZOe" name="ColourPalette.h" compile="0" resource="0" file="Source/ColourPalette.h"/>
+        <FILE id="mQkVfT" name="CommonSizes.h" compile="0" resource="0" file="Source/CommonSizes.h"/>
+      </GROUP>
+      <GROUP id="{FC2FF89F-5BE2-0E83-9223-EA0B7D098393}" name="Views">
+        <FILE id="axmLZu" name="GridCardsView.h" compile="0" resource="0" file="Source/GridCardsView.h"/>
+        <FILE id="r6Xixs" name="MainAxisAndCrossAxisView.h" compile="0" resource="0"
+              file="Source/MainAxisAndCrossAxisView.h"/>
+        <FILE id="sHGvus" name="ProportionalSizesView.h" compile="0" resource="0"
+              file="Source/ProportionalSizesView.h"/>
+        <FILE id="NPjXtr" name="RelativePositionsView.h" compile="0" resource="0"
+              file="Source/RelativePositionsView.h"/>
+      </GROUP>
+      <GROUP id="{DDFC1A1A-BDED-562D-DB58-6A873CA519E8}" name="Components">
+        <FILE id="Vx81hW" name="CardComponent.h" compile="0" resource="0" file="Source/CardComponent.h"/>
+        <FILE id="f9uwg0" name="GradientComponent.h" compile="0" resource="0"
+              file="Source/GradientComponent.h"/>
+      </GROUP>
+      <FILE id="NqZPVF" name="MainView.cpp" compile="1" resource="0" file="Source/MainView.cpp"/>
+      <FILE id="mAoAXe" name="MainView.h" compile="0" resource="0" file="Source/MainView.h"/>
+      <FILE id="WCxe2d" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ResponsiveLayout"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ResponsiveLayout"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="ResponsiveLayout"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="ResponsiveLayout"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
